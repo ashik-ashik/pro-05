@@ -1,0 +1,356 @@
+
+
+
+/* common CSS start */
+.container{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+
+/* common CSS end */
+
+/* go to top */
+.gotop{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+}
+.gotop .gocircle{
+    width: 45px;
+    height: 45px;
+    background: #00495f;
+    transition: ease-in-out .4s;
+}
+.gotop .gocircle:hover{
+    background: #ac0606;
+}
+
+.gotop .bx{
+    font-size: 20px;
+    border-color: #fff;
+    border-width: 2px !important;
+}
+
+
+/* topbar CSS start */
+#topbar .container{
+    overflow: visible;
+}
+#topbar{
+    z-index: 9999999999999999999999999 !important;
+}
+#topbar .dropdown-menu{
+    z-index: 9999999999999999999999999 !important;
+}
+#topbar .d-flex{
+    height: 40px;
+}
+#topbar .top-options img{
+    width: 20px;
+}
+
+/* topbar CSS end */
+
+
+/* menubar  CSS start */
+#menubar .navbar{
+    z-index:999 !important;
+}
+#menubar .container{
+    overflow: visible;
+}
+
+#menubar .navbar-brand img{
+    height: 35px;
+    width: auto;
+}
+/* menubar  CSS end */
+
+
+/* top slider CSS start */
+#topSlider .item{
+    height: 520px;
+}
+#topSlider .item img{
+    height: 520px ;
+    width: 100%;
+}
+/* top slider CSS end */
+
+
+/* whatIdo CSS start */
+#whatIdo .box{
+    box-shadow: 0px 5px 7px 0px #c5c5c5;
+}
+#whatIdo .box .title span{
+    width: 50px;
+    height: 50px;
+    background: #074c61;
+    transition: ease-in-out .4s;
+}
+
+#whatIdo .box:hover .title span{
+    background: #f00;
+    border-radius: 50% !important;
+}
+#whatIdo .box .title i{
+    font-size: 30px;
+}
+/* whatIdo CSS end */
+
+
+/*  mobile view CSS start */
+#mobile-view p{
+    font-size: 17px;
+    line-height: 30px;
+}
+/*  mobile view CSS end */
+
+
+/*  after mobile view CSS start */
+#after-mobile .icon .bx{
+    font-size: 37px;
+}
+/*  after mobile view CSS end */
+
+
+
+/*  responsive CSS start */
+#responsive .bx,
+#after-portfolio .bx,
+#after-desktop .bx{
+    font-size: 40px;
+}
+
+/* responsive  CSS end */
+
+
+
+/*  circular proggress CSS start */
+
+
+.box .chart{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: 110px;
+}
+.box .chart canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* circular proggress  CSS end */
+
+
+
+/* about my services CSS start */
+#accordionExample .card-header{
+    cursor: pointer;
+}
+/* about my services CSS end */
+
+
+/* testimonial slider CSS start */
+#tetimonialSlider{
+    background: url(../img/bg-26.jpg) fixed center center;
+    background-size: cover;
+}
+#tetimonialSlider .testi-over{
+    background: linear-gradient( #000000b2, #9b0000c2);
+}
+
+#tetimonialSlider .item .testi-txt{
+    width: 70%;
+    font-size: 21px;
+}
+#tetimonialSlider .item .testi-img{
+    width: 110px ;
+    height: 110px ;
+    border: 4px solid #eee;
+}
+.owl-carousel, .owl-carousel .owl-item .active{
+   background: none !important;
+}
+/* testimonial slider CSS end */
+
+
+
+/* recent work portfolio CSS start */
+
+#recent-portfolio .recent-overlay {
+    height: 220px;
+}
+#recent-portfolio .recent-overlay img {
+    width:100%;
+    height:100%;
+}
+#recent-portfolio .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(50deg, #ff990088, #071de270);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+    z-index: 5;
+  }
+  
+#recent-portfolio .recent-overlay:hover .overlay {
+    height: 100%;
+  }
+#recent-portfolio .recent-overlay .overlay .text{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    background: linear-gradient(50deg, #07e21962, #f700ff85);
+  }
+#recent-portfolio .recent-overlay .overlay .text .bx{
+    font-size: 17px;
+    background: #eeeeee8c;
+    cursor: pointer !important;
+}
+
+#recent-portfolio .recent-overlay .overlay .text::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    z-index: 10;
+}
+#recent-portfolio .recent-overlay .overlay .text::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    z-index: 10;
+}
+#recent-portfolio .recent-overlay .overlay .text:hover::before{
+    border-color: #fff;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+#recent-portfolio .recent-overlay .overlay .text:hover::after{
+    border-color: #fff;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear .3s, .3s height linear .5s;
+}
+.activ{
+    background: #00495f !important;
+}
+/* recent work portfolio CSS end */
+
+
+
+/* after portfolio CSS start */
+/* after portfolio CSS end */
+
+
+/*  desktop figure  CSS start */
+/*  desktop figure  CSS end */
+
+
+
+/*  after desktop  CSS start */
+#after-desktop .desk-img{
+    margin-bottom: -16px;
+}
+/*  after desktop  CSS end */
+
+
+
+/* colorfull CSS start */
+#colorfull{
+    margin-top: -16px;
+}
+/* colorfull CSS end */
+
+
+
+/* mobile middle CSS start */
+/* mobile middle CSS end */
+
+
+
+/*  recent news CSS start */
+#recent-news-slider .item img {
+    height: 150px !important;
+ }
+.owl-carousel .owl-nav {
+    position: absolute;
+    margin-top: -7%;
+    top: 0;
+    right: 0;
+ }
+.owl-carousel .owl-nav button.owl-next,
+ .owl-carousel .owl-nav button.owl-prev {
+     font-size: 30px;
+     background: #074c61;
+     color: #fff;
+     padding: 0px 15px !important;
+ }
+/* recent news  CSS end */
+
+
+
+/*  footer  CSS start */
+#footer .footer-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #00495f9c;
+    transition: ease-in .2s;
+}
+#footer .footer-overlay .bx{
+    font-size: 25px;
+    visibility: hidden;
+}
+#footer .position-relative{
+    height: 70px;
+}
+#footer .flickr-img{
+    transition: transform .5s;
+    height: 100%;
+    filter: grayscale(100);
+}
+#footer .position-relative:hover img{
+    transform: scale(1.6) rotate(30deg);
+    filter: grayscale(0);
+}
+
+#footer .position-relative:hover .footer-overlay{
+    height: 100%;
+}
+#footer .position-relative:hover .footer-overlay .bx{
+    visibility: visible;
+}
+/*  footer  CSS end */
+

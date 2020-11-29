@@ -1,0 +1,63 @@
+/*<!--For X-small device-->*/
+
+@media (max-width: 767px) {
+    #topSlider .item{
+        height: 250px;
+    }
+    #topSlider .item img{
+        height: 250px !important;
+        width: 100%;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: -15%;
+     }
+     .gotop .gocircle{
+        width: 35px;
+        height: 35px;
+    }
+    .gotop .bx{
+        font-size: 17px;
+    }
+    #tetimonialSlider .item .testi-txt{
+        width: 95%;
+        font-size: 16px;
+        font-weight: normal !important;
+    }
+}
+
+
+/*<!--For small device-->*/
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    #topSlider .item{
+        height: 320px;
+    }
+    #topSlider .item img{
+        height: 320px ;
+        width: 100%;
+    }
+    #tetimonialSlider .item .testi-txt{
+        width: 90%;
+        font-size: 18px;
+        font-weight: normal !important;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: -11%;
+     }
+}
+
+
+/*<!--For medium device-->*/
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+   
+}
+
+
+/*<!--For Large device-->*/
+
+@media (min-width:1200px) {
+   
+    
+}
+
