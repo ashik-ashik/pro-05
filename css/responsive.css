@@ -1,17 +1,10 @@
 /*<!--For X-small device-->*/
 
-@media (max-width: 480px) {
-    .owl-carousel .owl-nav {
-        margin-top: -30%;
-     }
-}
-@media (max-width: 530px) {
-    .owl-carousel .owl-nav {
-        margin-top: -20%;
-     }
-}
-@media (max-width: 767px) {
 
+@media (max-width: 767px) {
+    #topbar{
+        display: none !important;
+    }
     #topSlider .item{
         height: 250px;
     }
@@ -64,14 +57,18 @@
 /*<!--For medium device-->*/
 
 @media only screen and (min-width:992px) and (max-width: 1199px) {
-   
+    .owl-carousel .owl-nav {
+        margin-top: -8.5%;
+     }
 }
 
 
 /*<!--For Large device-->*/
 
 @media (min-width:1200px) {
-   
+    .owl-carousel .owl-nav {
+        margin-top: -7%;
+     }
     
 }
 
