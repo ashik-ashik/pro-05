@@ -19,6 +19,7 @@ img{
     border-radius: 50%;
     cursor: pointer;
     visibility: hidden;
+    z-index: 999999999999;
 }
 .gotop .gocircle{
     width: 45px;
@@ -41,9 +42,9 @@ img{
 #topbar .container{
     overflow: visible;
 }
-#topbar{
-    z-index: 9999999999999999999999999 !important;
-}
+/* #topbar{
+    display: none !important;
+} */
 #topbar .dropdown-menu{
     z-index: 9999999999999999999999999 !important;
 }

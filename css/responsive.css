@@ -1,6 +1,17 @@
 /*<!--For X-small device-->*/
 
+@media (max-width: 480px) {
+    .owl-carousel .owl-nav {
+        margin-top: -30%;
+     }
+}
+@media (max-width: 530px) {
+    .owl-carousel .owl-nav {
+        margin-top: -20%;
+     }
+}
 @media (max-width: 767px) {
+
     #topSlider .item{
         height: 250px;
     }
@@ -29,6 +40,9 @@
 /*<!--For small device-->*/
 
 @media only screen and (min-width:768px) and (max-width: 991px) {
+    #topbar{
+        display: none !important;
+    }
     #topSlider .item{
         height: 320px;
     }
